@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ColorCapsula : MonoBehaviour
 {
+    public GameObject Capsulaprueba;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,13 @@ public class ColorCapsula : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    private void FixedUpdate()
+    {
+        Color capsula = new Color(Random.value, Random.value, Random.value);
+        Capsulaprueba.GetComponent<MeshRenderer>().material.color = capsula;
         
     }
 }
