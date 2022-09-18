@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CubeSpawner : MonoBehaviour
 {
-    public GameObject PrefabCubo;
+    public GameObject Cubo;
     public List<GameObject> listaDeCubos;
     public float factorDeEscalamiento;
     public int numCubos = 0;
@@ -20,7 +20,7 @@ public class CubeSpawner : MonoBehaviour
     void Update()
     {
         numCubos++;
-        GameObject tempoGameObject = Instantiate<GameObject>(PrefabCubo);
+        GameObject tempoGameObject = Instantiate<GameObject>(Cubo);
         tempoGameObject.name = "CuboNumero" + numCubos;
         Color c = new Color(Random.value, Random.value, Random.value);
         tempoGameObject.GetComponent<MeshRenderer>().material.color = c;

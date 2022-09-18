@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorEsfera : MonoBehaviour
+public class CubeControl : MonoBehaviour
 {
-    public GameObject EsferaPrueba;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +13,17 @@ public class ColorEsfera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Color esfera = new Color(Random.value, Random.value, Random.value);
-        EsferaPrueba.GetComponent<MeshRenderer>().material.color = esfera;
+        
+    }
+
+    private void OnEnable()
+    {
+        Debug.Log("El cubo esta en escena");
+       
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("El cubo salio de la escena");
     }
 }
