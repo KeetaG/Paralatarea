@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CubeControl : MonoBehaviour
 {
+    public GameObject cubo;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject cubosi = Instantiate<GameObject>(cubo);
     }
 
     // Update is called once per frame
@@ -19,11 +21,10 @@ public class CubeControl : MonoBehaviour
     private void OnEnable()
     {
         Debug.Log("El cubo esta en escena");
-       
     }
 
     private void OnDisable()
     {
-        Debug.Log("El cubo salio de la escena");
+        Debug.Log("El cubo salió de la escena");
     }
 }
