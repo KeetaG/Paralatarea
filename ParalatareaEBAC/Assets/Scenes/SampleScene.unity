@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &497946777 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6828276263171719914, guid: cb23e8d07fabd0944b5fd3e5fb991b35, type: 3}
-  m_PrefabInstance: {fileID: 6828276263518147187}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,11 +227,10 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194230}
-  - component: {fileID: 963194229}
   - component: {fileID: 963194232}
   - component: {fileID: 963194231}
   - component: {fileID: 963194233}
+  - component: {fileID: 963194234}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -309,34 +303,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 86.836, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fedd8024b137baf40b09021ce74b4f1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cubo: {fileID: 497946777}
-  listaDeCubos: []
-  factorDeEscalamiento: 0.95
-  numCubos: 0
---- !u!114 &963194230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fc1cdf6f61dcf9429ffec626251bc69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +310,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c2b0d77689b63244ba50331b2c8efce, type: 3}
   m_Name: 
@@ -357,7 +323,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ac2f222b38c64d4b9f5d569fd0db4b6, type: 3}
   m_Name: 
@@ -373,12 +339,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c0c4b088e8ca124c82d9f43685f3e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cubo: {fileID: 2116700603}
+--- !u!114 &963194234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c792838705003124fb4dcdd4cfc210ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1270840704
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrefabCubo
       objectReference: {fileID: 0}
+    - target: {fileID: 1129440750576441673, guid: b7769ef7232c34b4c931d779fff6a1ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1129440750576441676, guid: b7769ef7232c34b4c931d779fff6a1ef, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -589,6 +571,10 @@ PrefabInstance:
     - target: {fileID: 2973513517255087830, guid: daf1540b065c62b419781f8f0f0c90b7, type: 3}
       propertyPath: m_Name
       value: PrefabEsfera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2973513517255087830, guid: daf1540b065c62b419781f8f0f0c90b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2973513517255087834, guid: daf1540b065c62b419781f8f0f0c90b7, type: 3}
       propertyPath: m_Mesh
@@ -833,6 +819,10 @@ PrefabInstance:
     - target: {fileID: 8930382079911153379, guid: 22f73defce02b8e4fa324125c69f1be9, type: 3}
       propertyPath: m_Name
       value: PrefabCapsula
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930382079911153379, guid: 22f73defce02b8e4fa324125c69f1be9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8930382079911153400, guid: 22f73defce02b8e4fa324125c69f1be9, type: 3}
       propertyPath: m_RootOrder
