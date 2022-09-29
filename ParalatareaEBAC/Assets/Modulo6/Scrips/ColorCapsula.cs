@@ -36,17 +36,13 @@ public class ColorCapsula : MonoBehaviour
         //Capsulaprueba.GetComponent<MeshRenderer>().material.color = capsula;
         
         if (variable1 == true)
-        {
-            Color capsula = new Color(0, 0, 0);
-            Capsulaprueba.GetComponent<MeshRenderer>().material.color = capsula;
-            Debug.Log("Hola");
+        { 
+            Capsulaprueba.GetComponent<MeshRenderer>().material.color = Color.white;
             variable1 = false;
         }
-        if (variable1 == false)
+        else if (variable1 == false)
         {
-            Color capsula = new Color(1, 1, 1);
-            Capsulaprueba.GetComponent<MeshRenderer>().material.color = capsula;
-            Debug.Log("se esta cumpliendo la condición");
+            Capsulaprueba.GetComponent<MeshRenderer>().material.color = Color.black;
             variable1 = true;
         }
 
