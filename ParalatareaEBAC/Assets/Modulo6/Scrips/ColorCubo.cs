@@ -5,20 +5,20 @@ using UnityEngine;
 public class ColorCubo : MonoBehaviour
 {
     public GameObject CuboPrueba;
-    public GameObject conexion1;
-    bool variable3;
-    bool variable4; 
+    public ColorCapsula vboolcapsula;
+    public ColorEsfera vboolesfera;
+    public bool variable3;
     private void Awake()
     {
-        //Color cubo = new Color(Random.value, Random.value, Random.value);
-        //CuboPrueba.GetComponent<MeshRenderer>().material.color = cubo;
+       
+
     }
     // Start is called before the first frame update
     void Start()
     {
-
-        conexion1.GetComponent<ColorCapsula>();
-        conexion1.GetComponent<ColorEsfera>();
+        vboolcapsula.variable1 = true;
+        vboolesfera.variable2 = true;
+        variable3 = true;
     }
 
     // Update is called once per frame
@@ -28,15 +28,13 @@ public class ColorCubo : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        //Color capsula = new Color(Random.value, Random.value, Random.value);
-        //Capsulaprueba.GetComponent<MeshRenderer>().material.color = capsula;
-
-        if (variable3 == true)
+        if (vboolcapsula && vboolesfera && variable3 == true)
         {
             CuboPrueba.GetComponent<MeshRenderer>().material.color = Color.white;
             variable3 = false;
+            
         }
-        else if (variable3 == false)
+        else
         {
             CuboPrueba.GetComponent<MeshRenderer>().material.color = Color.black;
             variable3 = true;

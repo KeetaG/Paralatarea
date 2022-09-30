@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ColorCapsula : MonoBehaviour
 {
-    bool variable1;
+   public bool variable1;
     
 
     // A B C   OR  AND  ((A or B) and c))  ((A or B) or c))
@@ -21,7 +21,7 @@ public class ColorCapsula : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        variable1 = false;
+        variable1 = true;
     }
 
     // Update is called once per frame

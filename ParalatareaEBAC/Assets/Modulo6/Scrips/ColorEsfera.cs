@@ -5,7 +5,7 @@ using UnityEngine;
 public class ColorEsfera : MonoBehaviour
 {
     public GameObject EsferaPrueba;
-    bool variable2;
+    public bool variable2;
     // Start is called before the first frame update
     void Start()
     {
