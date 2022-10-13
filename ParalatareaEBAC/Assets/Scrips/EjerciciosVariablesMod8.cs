@@ -18,7 +18,13 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
     string unstring = "Blanco";
     string dostring = "Negro";
     float numero = 3.14159f;
-    string valor7;  
+    string valor7 = "5000";
+    string valor8 = "2000";
+    string frase = "Hola Mundo";
+    int fraseinf = 0;
+    int frasesup = 10;
+    int change = 0;
+    char caracter;
     enum palabra 
     {
         unstring,
@@ -43,20 +49,40 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
                 break;
         }
         string exflt = numero.ToString();
-        Debug.Log("Este es tu numero " + (string.Format(exflt, "{0:0.0000}", numero)));
+        Debug.Log("Este es tu numero " + (string.Format(exflt, "{0:0.000}", numero)));
 
         string minombrecom = "Mario Barcena Calderon";
+        int largo = minombrecom.Length;
+        Debug.Log("Tu nombre tiene " + largo + " caracteres");
         string minombre = minombrecom.Substring(0, 5);
         string miapellidopat = minombrecom.Substring(6, 8);
         string miapellidomat = minombrecom.Substring(10, 12);
+        string nombresplit = "Mario,Barcena,Calderon";
+        string[] minombreporpartes = nombresplit.Split(',');
         Debug.Log(minombrecom);
-        Debug.Log(minombre);
-        Debug.Log(miapellidopat);
-        Debug.Log(miapellidomat);
+        Debug.Log("Esto es método SubString " + minombre);
+        Debug.Log("Esto es método SubString " + miapellidopat);
+        Debug.Log("Esto es método SubString " + miapellidomat);
+        Debug.Log("Esto es metodo split " + minombreporpartes[0]);
+        Debug.Log("Esto es metodo split " + minombreporpartes[1]);
+        Debug.Log("Esto es metodo split " + minombreporpartes[2]);
 
-        char misletras;
-        string frase = "Hola Mundo";
-        
+        int valorentero1 = 0;
+        int valorentero2 = 0;
+        int resul = 0;
+        int.TryParse(valor7, out valorentero1);
+        int.TryParse(valor8, out valorentero2);
+        resul = valorentero1 - valorentero2;
+        Debug.Log("Este es tu resultado del tryparse " + resul);
+
+        int fraselargo = frase.Length;
+        Debug.Log("Tu frase tiene " + fraselargo + " caracteres");
+        caracter = frase[2];
+
+        string frasefinal = "Tarea-lista-EBAC!";
+        string[] fraseporpartes = frasefinal.Split('-');
+        Debug.Log("Frase de ultimo ejercicio: " + fraseporpartes[1]);
+        Debug.Log("Frase de ultimo ejercicio: " + fraseporpartes[2]);
     }
 
     // Update is called once per frame
@@ -64,6 +90,13 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
     {
         valor1 *= 2;
         Debug.Log(valor1);
+
+        change = Random.Range(fraseinf , frasesup);
+        if (change %2 == 0)
+        {
+            caracter = frase[change];
+            Debug.Log("Este es tu caracter " + caracter);
+        }
     }
 
     private void FixedUpdate()
