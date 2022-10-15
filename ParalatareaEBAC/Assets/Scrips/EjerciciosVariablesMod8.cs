@@ -48,21 +48,21 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
                 Debug.Log("El color seleccionado es " + dostring);
                 break;
         }
-        string exflt = numero.ToString();
-        Debug.Log("Este es tu numero " + (string.Format(exflt, "{0:0.000}", numero)));
+        string exflt = numero.ToString("n4");
+        Debug.Log("Este es tu numero " + exflt);
 
         string minombrecom = "Mario Barcena Calderon";
         int largo = minombrecom.Length;
         Debug.Log("Tu nombre tiene " + largo + " caracteres");
         string minombre = minombrecom.Substring(0, 5);
-        string miapellidopat = minombrecom.Substring(6, 8);
-        string miapellidomat = minombrecom.Substring(10, 12);
+        //string miapellidopat = minombrecom.Substring(6, 13);
+        //string miapellidomat = minombrecom.Substring(14, 22);
         string nombresplit = "Mario,Barcena,Calderon";
         string[] minombreporpartes = nombresplit.Split(',');
         Debug.Log(minombrecom);
         Debug.Log("Esto es método SubString " + minombre);
-        Debug.Log("Esto es método SubString " + miapellidopat);
-        Debug.Log("Esto es método SubString " + miapellidomat);
+        //Debug.Log("Esto es método SubString " + miapellidopat);
+        //Debug.Log("Esto es método SubString " + miapellidomat);
         Debug.Log("Esto es metodo split " + minombreporpartes[0]);
         Debug.Log("Esto es metodo split " + minombreporpartes[1]);
         Debug.Log("Esto es metodo split " + minombreporpartes[2]);
@@ -79,10 +79,11 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
         Debug.Log("Tu frase tiene " + fraselargo + " caracteres");
         caracter = frase[2];
 
-        string frasefinal = "Tarea-lista-EBAC!";
-        string[] fraseporpartes = frasefinal.Split('-');
-        Debug.Log("Frase de ultimo ejercicio: " + fraseporpartes[1]);
-        Debug.Log("Frase de ultimo ejercicio: " + fraseporpartes[2]);
+        string frasefinal = "Tarea lista EBAC!";
+        int largo2 = frasefinal.Length;
+        Debug.Log("Tu frase final tiene " + largo2 + " caracteres");
+        string nuevafrase = frasefinal.Substring(5);
+        Debug.Log("Esta es la frase final " + nuevafrase);
     }
 
     // Update is called once per frame
@@ -92,11 +93,12 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
         Debug.Log(valor1);
 
         change = Random.Range(fraseinf , frasesup);
-        if (change %2 == 0)
+        if (change < frase.Length)
         {
             caracter = frase[change];
             Debug.Log("Este es tu caracter " + caracter);
         }
+        change++;
     }
 
     private void FixedUpdate()
