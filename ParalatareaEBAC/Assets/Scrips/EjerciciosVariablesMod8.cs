@@ -21,8 +21,6 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
     string valor7 = "5000";
     string valor8 = "2000";
     string frase = "Hola Mundo";
-    int fraseinf = 0;
-    int frasesup = 10;
     int change = 0;
     char caracter;
     enum palabra 
@@ -55,14 +53,14 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
         int largo = minombrecom.Length;
         Debug.Log("Tu nombre tiene " + largo + " caracteres");
         string minombre = minombrecom.Substring(0, 5);
-        //string miapellidopat = minombrecom.Substring(6, 13);
-        //string miapellidomat = minombrecom.Substring(14, 22);
+        string miapellidopat = minombrecom.Substring(6, 7);
+        string miapellidomat = minombrecom.Substring(14, 8);
         string nombresplit = "Mario,Barcena,Calderon";
         string[] minombreporpartes = nombresplit.Split(',');
         Debug.Log(minombrecom);
         Debug.Log("Esto es método SubString " + minombre);
-        //Debug.Log("Esto es método SubString " + miapellidopat);
-        //Debug.Log("Esto es método SubString " + miapellidomat);
+        Debug.Log("Esto es método SubString " + miapellidopat);
+        Debug.Log("Esto es método SubString " + miapellidomat);
         Debug.Log("Esto es metodo split " + minombreporpartes[0]);
         Debug.Log("Esto es metodo split " + minombreporpartes[1]);
         Debug.Log("Esto es metodo split " + minombreporpartes[2]);
@@ -92,13 +90,16 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
         valor1 *= 2;
         Debug.Log(valor1);
 
-        change = Random.Range(fraseinf , frasesup);
         if (change < frase.Length)
         {
-            caracter = frase[change];
-            Debug.Log("Este es tu caracter " + caracter);
+            if (change %2== 0)
+            {
+                caracter = frase[change];
+                Debug.Log("Este es tu caracter " + caracter);
+            }
+            change++;
         }
-        change++;
+        
     }
 
     private void FixedUpdate()
