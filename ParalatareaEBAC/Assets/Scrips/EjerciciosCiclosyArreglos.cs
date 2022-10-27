@@ -13,10 +13,12 @@ public class EjerciciosCiclosyArreglos : MonoBehaviour
     int limite2 = 10;
     int x;
     int y;
-    int contador4 = 3;
     int limite3 = 0;
     int limite4 = 0;
     int contador5 = 0;
+    int f = 0;
+    string h;
+    string j;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,17 +47,18 @@ public class EjerciciosCiclosyArreglos : MonoBehaviour
         //    y++;
         //    contador3--;
         //}
-        //string[] c = new string[3] { "Hola", "A", "Todos" };
-        //int[] arreglo4 = new int[contador4];
-        //for (int a = 0; a < c.Length; a++) 
-        //{
-        //   arreglo4[a] = a + 1;
-        //    Debug.Log(c[a]);
-        //}
-        //foreach (string j in c)
-        //{
-        //    Debug.Log(j);
-        //}
+        string[] c = new string[3] { "Hola ", "A ", "Todos" };
+        for (int f = 0; f < c.Length; f++)
+        {
+            j = c[f];
+        }
+        foreach (string j in c)
+        {
+            h += j;
+        }
+        Debug.Log(h);
+        
+
         int[,] matriz = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
         for (int k = 0; k < matriz.GetLength(0); k++)
         {
@@ -64,13 +67,15 @@ public class EjerciciosCiclosyArreglos : MonoBehaviour
                 Debug.Log("Numeros de matriz 1 " + matriz[k, l]);
             }
         }
-        int[] arreglo5 = new int[contador5];
-        for (int b = 0; b < arreglo5.Length; b++)
+        int[] matriz2 = new int[3] { { 5, 4, 3 } };
+        for (int q = 0; q < matriz2.GetLength(0); q++)
         {
-            arreglo5[b] = contador5 = Random.Range(limite3, limite4);
-            Debug.Log("Numeros para multiñlicación " + arreglo5[b]);
-            contador5--;
+            for (int w = 0; w < matriz2.GetLength(1); w++)
+            {
+                Debug.Log("Numeros de matriz 2 " + matriz2[q, w]);
+            }
         }
+        
 
     }
 
