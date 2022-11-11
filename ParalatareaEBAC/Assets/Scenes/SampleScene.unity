@@ -506,6 +506,9 @@ GameObject:
 =======
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Main Camera
@@ -606,6 +609,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   campo1: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!114 &963194231
 MonoBehaviour:
