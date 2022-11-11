@@ -19,6 +19,7 @@ public class EjerciciosCiclosyArreglos : MonoBehaviour
     int f = 0;
     string h;
     string j;
+<<<<<<< HEAD
     int k = 0;
     int q = 0;
     int l = 0;
@@ -26,6 +27,8 @@ public class EjerciciosCiclosyArreglos : MonoBehaviour
     int r = 0;
     int b = 0;
     int suma = 0;
+=======
+>>>>>>> Main
     // Start is called before the first frame update
     void Start()
     {
@@ -74,7 +77,11 @@ public class EjerciciosCiclosyArreglos : MonoBehaviour
                 Debug.Log("Numeros de matriz 1 " + matriz[k, l]);
             }
         }
+<<<<<<< HEAD
         int[,] matriz2 = new int[1,3] { { 5, 4, 3 } };
+=======
+        int[] matriz2 = new int[3] { { 5, 4, 3 } };
+>>>>>>> Main
         for (int q = 0; q < matriz2.GetLength(0); q++)
         {
             for (int w = 0; w < matriz2.GetLength(1); w++)
@@ -83,6 +90,10 @@ public class EjerciciosCiclosyArreglos : MonoBehaviour
             }
         }
         
+<<<<<<< HEAD
+=======
+
+>>>>>>> Main
     }
 
     // Update is called once per frame
