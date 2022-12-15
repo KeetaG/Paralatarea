@@ -7,7 +7,7 @@ public class VariablesBooleanas : MonoBehaviour
     bool variable1;
     bool variable2;
     bool variable3;
-    int valor1 = 5;
+    //int valor1 = 5;
 
     // A B C   OR  AND  ((A or B) and c))  ((A or B) or c))
     // 1 1 1    1   1            1                  1
