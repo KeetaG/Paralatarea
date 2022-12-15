@@ -384,7 +384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1129440750576441673, guid: b7769ef7232c34b4c931d779fff6a1ef, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1129440750576441676, guid: b7769ef7232c34b4c931d779fff6a1ef, type: 3}
       propertyPath: m_Mesh
@@ -502,18 +502,7 @@ GameObject:
   - component: {fileID: 963194231}
   - component: {fileID: 963194233}
   - component: {fileID: 963194234}
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-  - component: {fileID: 963194229}
   - component: {fileID: 963194230}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-  - component: {fileID: 963194229}
->>>>>>> Main
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -586,24 +575,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 86.836, z: 0}
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Main
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-<<<<<<< HEAD
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8e245cff09b7bc42a279817df3c046c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,23 +582,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fea0facefe5f374db28e6a0b1187376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   campo1: 0
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8e245cff09b7bc42a279817df3c046c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
->>>>>>> Main
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,7 +660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &980082690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -796,7 +756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1004105707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,7 +867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1181434305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,7 +1180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1129440750576441673, guid: b7769ef7232c34b4c931d779fff6a1ef, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1129440750576441676, guid: b7769ef7232c34b4c931d779fff6a1ef, type: 3}
       propertyPath: m_Mesh
@@ -1347,7 +1307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1129440750576441673, guid: b7769ef7232c34b4c931d779fff6a1ef, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1129440750576441676, guid: b7769ef7232c34b4c931d779fff6a1ef, type: 3}
       propertyPath: m_Mesh
@@ -1369,7 +1329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2973513517255087830, guid: daf1540b065c62b419781f8f0f0c90b7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2973513517255087833, guid: daf1540b065c62b419781f8f0f0c90b7, type: 3}
       propertyPath: m_Enabled
@@ -1626,7 +1586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8930382079911153379, guid: 22f73defce02b8e4fa324125c69f1be9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8930382079911153400, guid: 22f73defce02b8e4fa324125c69f1be9, type: 3}
       propertyPath: m_RootOrder
